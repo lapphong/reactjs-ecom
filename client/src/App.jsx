@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { publicRoutes } from './routes';
 import NavBar from './pages/global/Navbar';
+import CartMenu from './pages/global/CartMenu';
 
 const ScrollToTop = () => {
    const { pathname } = useLocation();
@@ -25,6 +26,7 @@ function App() {
                   return <Route key={route.id} path={route.path} element={<Page />} />;
                })}
             </Routes>
+            <CartMenu />
          </BrowserRouter>
       </div>
    );
