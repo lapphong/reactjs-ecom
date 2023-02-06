@@ -1,3 +1,9 @@
+import MainCarousel from '../../pages/home/MainCarousel';
+
 export default function Home() {
-   return <div>Home</div>;
+   return (
+      <div className="home">
+         <MainCarousel />
+      </div>
+   );
 }
