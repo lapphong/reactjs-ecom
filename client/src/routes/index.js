@@ -4,10 +4,10 @@ import Confirmation from '../pages/checkout/Confirmation';
 import ItemDetails from '../pages/itemDetails/ItemDetails';
 
 const publicRoutes = [
-   { path: '/', components: Home },
-   { path: 'item/:itemId', components: ItemDetails },
-   { path: 'checkout', components: CheckOut },
-   { path: 'checkout/success', components: Confirmation },
+   { id: '1', path: '/', components: Home },
+   { id: '2', path: 'item/:itemId', components: ItemDetails },
+   { id: '3', path: 'checkout', components: CheckOut },
+   { id: '4', path: 'checkout/success', components: Confirmation },
 ];
 
 const privateRoutes = [];
