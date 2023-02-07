@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { publicRoutes } from './routes';
 import NavBar from './pages/global/Navbar';
 import CartMenu from './pages/global/CartMenu';
+import Footer from './pages/global/Footer';
 
 const ScrollToTop = () => {
    const { pathname } = useLocation();
@@ -27,6 +28,7 @@ function App() {
                })}
             </Routes>
             <CartMenu />
+            <Footer />
          </BrowserRouter>
       </div>
    );
